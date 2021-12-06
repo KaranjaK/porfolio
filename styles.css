@@ -22,16 +22,18 @@ header div{
     display: flex;
     background: rgba(0, 0, 0, 0.5);   
 }
-header div h1{
-    font-family: Oleo Script Swash Caps;
-    font-size: 5em;
-    margin: 0 .5em;
+header div span{
+    height: 3em;
+    width: 3em;
+    border-radius: 3em;
+    background: white;
+    margin: 2em;
 }
 header div ul{
     list-style: none;
     display: flex;
     align-items: center;
-    margin-left: 35em;
+    margin-left: 40em;
 }
 header div a{
     text-decoration: none;
@@ -56,10 +58,14 @@ header section div{
     width: 100vh;
     display: flex;
     text-align: center;
-    left: 5rem;
+}
+header section div h1{
+    font-family: Satisfy;
+    font-size: 5em;
+    margin: 0 .5em;
 }
 header section div hr{
-    height: 12em;
+    height: 15em;
     width: .5em;
     background: white;
 }
