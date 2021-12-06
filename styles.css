@@ -95,6 +95,7 @@ button a{
     font-size: 1.5em;
 }
 /* Styling for the About page */
+/* Styling of the navigation bar */
 .about1{
     background: linear-gradient(0deg, rgba(132, 92, 194, 0.9),rgba(132, 92, 194, 0.9)), url(resources/bg.jpg);
     background-size: cover;
@@ -123,50 +124,64 @@ button a{
     font-size: 2rem;
     padding: 0 2rem;
 }
-.about1 section {
+.hello{
     padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about1 section div{
+.hello div{
     display: flex;
     flex-direction: column;
     line-height: .1;
 }
-.about1 section h1{
+.hello h1{
     color: white;
     font-size: 3em;
 }
-.about1 section span {
+.hello span {
     color: #ff8800;
 }
-.about1 section hr {
+.hello hr {
     height: 25em;
     width: .5em;
     background: white;
 }
-.about1 section p{
+.hello p{
     display: flex;
     flex-direction: column;
 }
-.about1 section p span{
+.hello p span{
     color: white;
     font-size: 2em;
 }
-.edu{
+/* Styles the Education Backgound Section */
+.edu1{
     width: 100%;
+  }
+.edu{
     color: white;
-    display: flex;
-    /* background-color: red; */
+    float: left;
+    align-items: center;
+}
+.edu1 h1{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+.edu1 h1 span {
+    color: #ff8800;
 }
 .edu div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 10em;
-    width: 20em;
+    float: left;
     border: none;
-    margin: 3em;
     box-shadow: 2rem 2rem 8rem #000;
+    width: 22em;
+    height: 15em;
+    margin: 2em;
+    line-height: .1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
