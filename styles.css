@@ -41,7 +41,6 @@ header div a{
 }
 header section{
     position: relative; 
-    color: white;
     display: flex;
     background: rgba(0, 0, 0, 0.5);  
     height: 90vh;
@@ -50,15 +49,19 @@ header section{
     align-items: center;
 }
 header section img{
-    height: 20rem;
-    width: 20rem;
+    height: 30rem;
     border-radius: 20rem;
 }
 header section div{
+    width: 100vh;
     display: flex;
-    flex-direction: column;
     text-align: center;
     left: 5rem;
+}
+header section div hr{
+    height: 12em;
+    width: .5em;
+    background: white;
 }
 header section div p{
     font-size: 2.5rem;
