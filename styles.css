@@ -5,18 +5,18 @@ body{
     overflow-x: hidden;
 }
 /* Header section styling */
-header{
+.home{
     width: 100%;
     height: 100vh;
 }
-header:before {
+.home:before {
     content: '';
     position: absolute;
     height: 107%;
     width: 100%;
-    background: rgba(132, 92, 194,0.8); 
+    background: rgba(132, 92, 194,0.8);
 }
-header #bgvideo{
+.home #bgvideo{
     position: absolute;
     top: 0;
     left: 0;
@@ -25,60 +25,58 @@ header #bgvideo{
     z-index: -1;
     overflow-y: hidden;
 }
-header div{
+.home div{
     position: relative; 
     color: white;
     display: flex;
-    /* background: rgba(0, 0, 0, 0.5);    */
 }
-header div span{
+.home div span{
     height: 3em;
     width: 3em;
     border-radius: 3em;
     background: white;
     margin: 2em;
 }
-header div ul{
+.home div ul{
     list-style: none;
     display: flex;
     align-items: center;
     margin-left: 40em;
 }
-header div a{
+.home div a{
     text-decoration: none;
     color: white;
     font-size: 2rem;
     padding: 0 2rem;
 }
-header section{
+.home section{
     position: relative; 
     display: flex;
-    /* background: rgba(0, 0, 0, 0.5);   */
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header section img{
+.home section img{
     height: 30rem;
     border-radius: 20rem;
 }
-header section div{
+.home section div{
     width: 100vh;
     display: flex;
     text-align: center;
 }
-header section div h1{
+.home section div h1{
     font-family: Satisfy;
     font-size: 5em;
     margin: 0 .5em;
 }
-header section div hr{
+.home section div hr{
     height: 15em;
     width: .5em;
     background: white;
 }
-header section div p{
+.home section div p{
     font-size: 2.5rem;
 }
 /* button styling */
@@ -87,7 +85,7 @@ button{
     left: 54em;
     top: 45em;
     border: none;
-    background-color:#AF5D00;
+    background-color:#ff8800;
     height: 4em;
     width: 10em;
 }
@@ -97,6 +95,78 @@ button a{
     font-size: 1.5em;
 }
 /* Styling for the About page */
-body .about{
-    background: rgba(0, 0, 0, 0.5);
+.about1{
+    background: linear-gradient(0deg, rgba(132, 92, 194, 0.9),rgba(132, 92, 194, 0.9)), url(resources/bg.jpg);
+    background-size: cover;
+}
+.about div{
+    position: relative; 
+    color: white;
+    display: flex;
+}
+.about div span{
+    height: 3em;
+    width: 3em;
+    border-radius: 3em;
+    background: white;
+    margin: 2em;
+}
+.about div ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 40em;
+}
+.about div a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+.about1 section {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about1 section div{
+    display: flex;
+    flex-direction: column;
+    line-height: .1;
+}
+.about1 section h1{
+    color: white;
+    font-size: 3em;
+}
+.about1 section span {
+    color: #ff8800;
+}
+.about1 section hr {
+    height: 25em;
+    width: .5em;
+    background: white;
+}
+.about1 section p{
+    display: flex;
+    flex-direction: column;
+}
+.about1 section p span{
+    color: white;
+    font-size: 2em;
+}
+.edu{
+    width: 100%;
+    color: white;
+    display: flex;
+    /* background-color: red; */
+}
+.edu div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10em;
+    width: 20em;
+    border: none;
+    margin: 3em;
+    box-shadow: 2rem 2rem 8rem #000;
 }
