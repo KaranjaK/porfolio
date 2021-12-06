@@ -81,6 +81,18 @@ header section div hr{
 header section div p{
     font-size: 2.5rem;
 }
+/* button styling */
+button{
+    position: absolute;
+    left: 29em;
+    top: 25em;
+    border: none;
+    color: white;
+    background-color:#AF5D00;
+    height: 2.5em;
+    width: 8em;
+    font-size: 1.5em;
+}
 /* Styling for the About page */
 body .about{
     background: rgba(0, 0, 0, 0.5);
