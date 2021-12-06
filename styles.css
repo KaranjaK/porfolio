@@ -185,3 +185,37 @@ button a{
     flex-direction: column;
     justify-content: center;
 }
+/* Styling for the projects Section */
+.pro1 {
+    color: white;
+    font-size: 6em;
+    text-align: center;
+}
+.pro1 span {
+    color: #ff8800;
+}
+.pro{
+    color: white;
+    float: left;
+    align-items: center;
+}
+.pro div{
+    float: left;
+    border: none;
+    box-shadow: 2rem 2rem 8rem #000;
+    width: 22em;
+    height: 20em;
+    margin: 2em;
+    line-height: .1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.pro li{
+    line-height: 1.5;
+}
+.pro a{
+    text-decoration: none;
+    color: #ff8800;
+}
