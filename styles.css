@@ -1,225 +1,26 @@
-/* Whole page styling */
-body{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Roboto:wght@500;900&display=swap");
+
+/* Universal Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
-/* Header section styling */
-.home{
-    width: 100%;
-    height: 100vh;
+
+body {
+  background: #1f242d;
 }
-.home:before {
-    content: '';
-    position: absolute;
-    height: 107%;
-    width: 100%;
-    background: rgba(132, 92, 194,0.8);
+
+/* Navbar Styling */
+.navbar-brand {
+  color: #fff;
 }
-.home #bgvideo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 90%;
-    z-index: -1;
-    overflow-y: hidden;
+.navbar-nav{
+    margin-right: 15rem;
 }
-.home div{
-    position: relative; 
-    color: white;
-    display: flex;
-}
-.home div span{
-    height: 3em;
-    width: 3em;
-    border-radius: 3em;
-    background: white;
-    margin: 2em;
-}
-.home div ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: 40em;
-}
-.home div a{
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0 2rem;
-}
-.home section{
-    position: relative; 
-    display: flex;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.home section img{
-    height: 30rem;
-    border-radius: 20rem;
-}
-.home section div{
-    width: 100vh;
-    display: flex;
-    text-align: center;
-}
-.home section div h1{
-    font-family: Satisfy;
-    font-size: 5em;
-    margin: 0 .5em;
-}
-.home section div hr{
-    height: 15em;
-    width: .5em;
-    background: white;
-}
-.home section div p{
-    font-size: 2.5rem;
-}
-/* button styling */
-button{
-    position: absolute;
-    left: 54em;
-    top: 45em;
-    border: none;
-    background-color:#ff8800;
-    height: 4em;
-    width: 10em;
-}
-button a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-}
-/* Styling for the About page */
-/* Styling of the navigation bar */
-.about1{
-    background: linear-gradient(0deg, rgba(132, 92, 194, 0.9),rgba(132, 92, 194, 0.9)), url(resources/bg.jpg);
-    background-size: cover;
-}
-.about div{
-    position: relative; 
-    color: white;
-    display: flex;
-}
-.about div span{
-    height: 3em;
-    width: 3em;
-    border-radius: 3em;
-    background: white;
-    margin: 2em;
-}
-.about div ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-left: 40em;
-}
-.about div a{
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    padding: 0 2rem;
-}
-.hello{
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.hello div{
-    display: flex;
-    flex-direction: column;
-    line-height: .1;
-}
-.hello h1{
-    color: white;
-    font-size: 3em;
-}
-.hello span {
-    color: #ff8800;
-}
-.hello hr {
-    height: 25em;
-    width: .5em;
-    background: white;
-}
-.hello p{
-    display: flex;
-    flex-direction: column;
-}
-.hello p span{
-    color: white;
-    font-size: 2em;
-}
-/* Styles the Education Backgound Section */
-.edu1{
-    width: 100%;
-  }
-.edu{
-    color: white;
-    float: left;
-    align-items: center;
-}
-.edu1 h1{
-    color: white;
-    font-size: 3em;
-    text-align: center;
-}
-.edu1 h1 span {
-    color: #ff8800;
-}
-.edu div{
-    float: left;
-    border: none;
-    box-shadow: 2rem 2rem 8rem #000;
-    width: 22em;
-    height: 15em;
-    margin: 2em;
-    line-height: .1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-/* Styling for the projects Section */
-.pro1 {
-    color: white;
-    font-size: 6em;
-    text-align: center;
-}
-.pro1 span {
-    color: #ff8800;
-}
-.pro{
-    color: white;
-    float: left;
-    align-items: center;
-}
-.pro div{
-    float: left;
-    border: none;
-    box-shadow: 2rem 2rem 8rem #000;
-    width: 22em;
-    height: 20em;
-    margin: 2em;
-    line-height: .1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.pro li{
-    line-height: 1.5;
-}
-.pro a{
-    text-decoration: none;
-    color: #ff8800;
-}
-footer{
-    color: white;
-    text-align: center;
+.nav-link {
+  color: #fff;
+  margin-top: 0.5rem;
+  
 }
