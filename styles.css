@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Roboto:wght@500;900&display=swap");
-
 /* Universal Styling */
 * {
   margin: 0;
@@ -10,28 +9,27 @@
 
 body {
   background: #1f242d;
+  /* Navbar Styling */
 }
-
-/* Navbar Styling */
-.navbar-brand {
+body .navbar-brand {
   color: #fff;
   font-size: 25px;
   cursor: pointer;
 }
-.navbar-nav {
+body .navbar-nav {
   margin-right: 15rem;
 }
-.nav-link {
+body .nav-link {
   color: #fff;
   margin-top: 0.5rem;
 }
-.navbar-toggler {
+body .navbar-toggler {
   border-color: #fff;
 }
-.navbar-toggler .navbar-toggler-icon {
+body .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,203, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-h2 {
+body h2 {
   width: 100%;
   position: fixed;
   bottom: 0px;
@@ -39,4 +37,4 @@ h2 {
   background-color: aqua;
   color: #1f242d;
   text-align: center;
-}
+}/*# sourceMappingURL=styles.css.map */
