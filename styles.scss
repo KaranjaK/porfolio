@@ -1,5 +1,7 @@
+// Google Fonts CDN
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Roboto:wght@500;900&display=swap");
-
+// Boostrap Icons CDN
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 /* Universal Styling */
 * {
   margin: 0;
@@ -10,18 +12,22 @@
 
 body {
   background: #1f242d;
+
   /* Navbar Styling */
-  .navbar-brand {
+  .navbar-logo {
     color: #fff;
     font-size: 25px;
     cursor: pointer;
   }
   .navbar-nav {
     margin-right: 15rem;
-  }
-  .nav-link {
-    color: #fff;
-    margin-top: 0.5rem;
+    .nav-link {
+      color: #fff;
+      margin-top: 0.5rem;
+    }
+    .nav-link:hover{
+      color:#0ef;
+    }
   }
   .navbar-toggler {
     border-color: #fff;
