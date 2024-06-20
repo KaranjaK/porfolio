@@ -1,5 +1,12 @@
 /* Font import  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Styling varibales */
+:root{
+  --primary_color: #0d254a;
+  --secondary-color: #3c7ec3;
+  --prifont_color: #fff; 
+  --secfont_color: #dfb892;
+}
 /* Defaul CSS */
 * {
   margin: 0;
@@ -14,8 +21,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #000435 !important;
-  color: #fff !important;
+  background-color: var(--primary_color) !important;
+  color: var(--font_color) !important;
   font-family: "Roboto", sans-serif !important;
 }
 h1,
@@ -91,7 +98,7 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: var(--prifont_color) !important;
   letter-spacing: 0.08rem;
   padding: 0 2rem;
   font-size: 1.4rem;
@@ -112,7 +119,7 @@ span.navbar-text {
 .social-icon a {
   width: 3rem;
   height: 3rem;
-  background: rgba(217, 217, 217, 0.1);
+  background: var(--secondary-color);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 0.6rem;
