@@ -6,12 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './components/navbar/NavBar'
 import Banner from './components/banner/banner';
+import Skills from './components/skills/skills';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <NavBar />
     <Banner />
+    <Skills />
   </React.StrictMode>
 );
 
