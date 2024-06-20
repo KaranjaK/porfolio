@@ -29,7 +29,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} />
+          <img src={logo} alt="MyLogo."/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -42,9 +42,9 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href=""><FaLinkedin  className="fa-icon"/></a>
-              <a href=""><FaGithub className="fa-icon"/></a>
-              <a href=""><FaTwitter className="fa-icon"/></a>
+              <a href="#"><FaLinkedin  className="fa-icon"/></a>
+              <a href="#"><FaGithub className="fa-icon"/></a>
+              <a href="#"><FaTwitter className="fa-icon"/></a>
             </div>
             <button className="vvd" onClick={() => { }}>
             <span> Let's Connect</span>
