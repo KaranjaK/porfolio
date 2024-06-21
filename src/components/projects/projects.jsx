@@ -7,25 +7,39 @@ import colorSharp2 from "../resources/color-sharp2.png";
 import ProjectCard from "./projectCard";
 // import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { type } from "@testing-library/user-event/dist/type";
 
 const Projects = () => {
     const projects = [
         {
             title: "Farmer Lifelearn",
+            pro_stack: "Django-Python",
             description: "Learning Management System built on Django Python",
             imgUrl: farmerlifelearn,
+            projectUrl: "http://codeittech.co.ke/",
         },
         {
             title: "HEX and RGB Color Generator",
+            pro_stack: "React",
             description: "React Project to generate Random colors giving Hex and Rgb Color Codes",
             imgUrl: hex_rgb,
+            projectUrl: "https://hex-rgb-colorgen.netlify.app/",
         },
         {
             title: "Accordion",
+            pro_stack: "React",
             description: "React Project producing accordion effect on cards. It has a button switching between multi and single select",
             imgUrl: accordion,
+            projectUrl: "https://accordion-select.netlify.app/",
         },
     ];
+
+
+    // Extract unique pro_stack values
+    const proStacks = [...new Set(projects.map(project => project.pro_stack))];
+
+    // Set the default pro_stack
+    const defaultProStack = proStacks[0];
 
     return (
         <section className="project" id="projects">
@@ -36,40 +50,28 @@ const Projects = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Projects</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                                    <p>A key driving mechanism for me is delivering cutting-edge applications that have a well thought after backend process, keenly structured query mechanism and breathe taking user interfaces to deliver that covertable user experience.</p>
+                                    <Tab.Container id="projects-tabs" defaultActiveKey={defaultProStack}>
                                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                                            </Nav.Item>
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                                            </Nav.Item>
-                                            <Nav.Item>
-                                                <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                                            </Nav.Item>
+                                            {proStacks.map((stack, index) => (
+                                                <Nav.Item key={index}>
+                                                    <Nav.Link eventKey={stack}>{stack}</Nav.Link>
+                                                </Nav.Item>
+                                            ))}
                                         </Nav>
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                                            <Tab.Pane eventKey="first">
-                                                <Row>
-                                                    {
-                                                        projects.map((project, index) => {
-                                                            return (
-                                                                <ProjectCard
-                                                                    key={index}
-                                                                    {...project}
-                                                                />
-                                                            )
-                                                        })
-                                                    }
-                                                </Row>
-                                            </Tab.Pane>
-                                            <Tab.Pane eventKey="section">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                                            </Tab.Pane>
-                                            <Tab.Pane eventKey="third">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                                            </Tab.Pane>
+                                            {proStacks.map((stack, index) => (
+                                                <Tab.Pane eventKey={stack} key={index}>
+                                                    <Row>
+                                                        {projects.filter(project => project.pro_stack === stack).map((project, idx) => (
+                                                            <ProjectCard
+                                                                key={idx}
+                                                                {...project}
+                                                            />
+                                                        ))}
+                                                    </Row>
+                                                </Tab.Pane>
+                                            ))}
                                         </Tab.Content>
                                     </Tab.Container>
                                 </div>}
