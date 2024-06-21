@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import farmerlifelearn from '../resources/farmerlifelearn.png';
 import hex_rgb from '../resources/hex-rgb-project.png'
 import accordion from '../resources/accordion.png'
+import cropscan from '../resources/cropsan.png'
 
 import colorSharp2 from "../resources/color-sharp2.png";
 import ProjectCard from "./projectCard";
@@ -31,6 +32,13 @@ const Projects = () => {
             description: "React Project producing accordion effect on cards. It has a button switching between multi and single select",
             imgUrl: accordion,
             projectUrl: "https://accordion-select.netlify.app/",
+        },
+        {
+            title: "CropScan",
+            pro_stack: "Django-Python",
+            description: "Full Stack application that scans crops in the farm, queries an API(Plantrix API) and sends a text message to the farmer based on findings in relation to crop diseases, pests and nutrients needed",
+            imgUrl: cropscan,
+            projectUrl: "https://cropscan.co.ke/",
         },
     ];
 
