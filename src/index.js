@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './components/navbar/NavBar'
 import Banner from './components/banner/banner';
 import Skills from './components/skills/skills';
+import Projects from './components/projects/projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <NavBar />
     <Banner />
     <Skills />
+    <Projects />
   </React.StrictMode>
 );
 
