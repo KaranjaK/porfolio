@@ -8,6 +8,7 @@ import NavBar from './components/navbar/NavBar'
 import Banner from './components/banner/banner';
 import Skills from './components/skills/skills';
 import Projects from './components/projects/projects';
+import Contact from './components/contact/contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
     <Banner />
     <Skills />
     <Projects />
+    <Contact />
   </React.StrictMode>
 );
 
