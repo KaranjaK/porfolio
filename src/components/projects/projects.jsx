@@ -3,6 +3,7 @@ import farmerlifelearn from '../resources/farmerlifelearn.png';
 import hex_rgb from '../resources/hex-rgb-project.png'
 import accordion from '../resources/accordion.png'
 import cropscan from '../resources/cropsan.png'
+import portfolio from '../resources/portfolio.png'
 
 import colorSharp2 from "../resources/color-sharp2.png";
 import ProjectCard from "./projectCard";
@@ -39,6 +40,13 @@ const Projects = () => {
             description: "Full Stack application that scans crops in the farm, queries an API(Plantrix API) and sends a text message to the farmer based on findings in relation to crop diseases, pests and nutrients needed",
             imgUrl: cropscan,
             projectUrl: "https://cropscan.co.ke/",
+        },
+        {
+            title: "KaranjaKelvin",
+            pro_stack: "React",
+            description: "This is a link of this portfolio project",
+            imgUrl: portfolio,
+            projectUrl: "https://main--karanjakelvin.netlify.app/",
         },
     ];
 
