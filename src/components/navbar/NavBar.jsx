@@ -2,12 +2,16 @@ import { useEffect, useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FaHome, FaCode, FaProjectDiagram, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import logo from '../resources/logo.png'
+import WOW from 'wowjs'
+import 'animate.css/animate.css'
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home')
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
+    const wow = new WOW.WOW();
+    wow.init();
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true)
@@ -27,9 +31,9 @@ const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? 'scrolled' : ''}>
-      <Container>
+      <Container className="wow animate__animated animate__slideInLeft" data-wow-duration="2s">
         <Navbar.Brand href="#home">
-          <img src={logo} alt="MyLogo."/>
+          <img src={logo} alt="MyLogo." className="wow animate__animated animate__bounce" data-wow-duration="4s" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -42,13 +46,13 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#"><FaLinkedin  className="fa-icon"/></a>
-              <a href="#"><FaGithub className="fa-icon"/></a>
-              <a href="#"><FaTwitter className="fa-icon"/></a>
+              <a href="#"><FaLinkedin className="fa-icon" /></a>
+              <a href="#"><FaGithub className="fa-icon" /></a>
+              <a href="#"><FaTwitter className="fa-icon" /></a>
             </div>
             <button className="vvd" onClick={() => { }}>
-            <span> Let's Connect</span>
-          </button>
+              <span> Let's Connect</span>
+            </button>
           </span>
         </Navbar.Collapse>
       </Container>
