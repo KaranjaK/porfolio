@@ -43,8 +43,7 @@ const Skills = () => {
                                     <h1>Technical Skills</h1>
                                     <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                         <div className="item">
-                                            <img src={meter1} alt="Image" />
-                                            <h5>Python</h5>
+                                            <h2><span className='counter' data-target="90">90</span><sup>%</sup><br />Python</h2>
                                         </div>
                                         <div className="item">
                                             <img src={meter2} alt="Image" />
