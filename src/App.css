@@ -6,6 +6,7 @@
   --secondary-color: #3c7ec3;
   --prifont_color: #fff; 
   --secfont_color: #dfb892;
+  --progress-value: 0deg;
 }
 /* Defaul CSS */
 * {
@@ -334,19 +335,58 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   position: relative;
 }
-.skill-slider .item img {
+.skill-slider .rating img {
   width: 45%;
   margin: 0 auto 1rem auto;
 }
 .tech-skill, .soft-skill{
   margin-bottom: 6rem;
 }
-.tech-skill h1{
-  padding-bottom: 4rem;
+.rating{
+  padding: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
 }
-.soft-skill h1{
-  padding-bottom: 4rem;
+.circular-progress{
+  position: relative;
+  height: 15em;
+  width: 15em;
+  border-radius: 50%;
+  background: conic-gradient(#7d2ae8 var(--progress-value), #ffffff 0deg);
+  box-shadow: 0 0 1em #7d2ae8, 0 0 2em #7d2ae8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 12em;
+  width: 12em;
+  border-radius: 50%;
+  background-color: #030331;
+}
+ .rating h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--prifont_color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5em;
+}
+.rating h2 span{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.rating h2 sup{
+  font-size: 1.5rem;
+  font-weight: 300;
+} 
 .background-image-left {
   top: 65%;
   position: absolute;
