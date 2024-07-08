@@ -50,7 +50,7 @@ const Skills = () => {
                             </p>
                             <section className='tech-skill'>
                                 <h1>Technical Skills</h1>
-                                <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider wow animate__animated fade">
+                                <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                     <CircularProgress targetValue={98} label="HTML" />
                                     <CircularProgress targetValue={95} label="CSS" />
                                     <CircularProgress targetValue={92} label="SaSS" />
