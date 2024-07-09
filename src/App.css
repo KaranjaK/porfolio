@@ -310,10 +310,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .wrap {
   display: inline-block;
   overflow: hidden;
-  border-right: 0.15em solid orange; /* Cursor effect */
+  border-right: 0.15em solid var(--secfont_color); 
   white-space: nowrap;
   animation: blink 0.75s step-end infinite;
-  transition: all 0.2s ease-in-out; /* Smooth transition */
+  transition: all 0.2s ease-in-out;
 }
 
 @keyframes blink {
