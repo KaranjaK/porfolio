@@ -307,6 +307,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+.wrap {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid orange; /* Cursor effect */
+  white-space: nowrap;
+  animation: blink 0.75s step-end infinite;
+  transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: var(--secfont_color) }
+}
 
 /************ Skills Css ************/
 .skill {
