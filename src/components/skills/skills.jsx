@@ -62,26 +62,11 @@ const Skills = () => {
                             <section className='soft-skill'>
                                 <h1>Soft Skills</h1>
                                 <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                    <div className="item">
-                                        <img src={meter1} alt="Image" />
-                                        <h5>Effective Communication</h5>
-                                    </div>
-                                    <div className="item">
-                                        <img src={meter2} alt="Image" />
-                                        <h5>Leadership</h5>
-                                    </div>
-                                    <div className="item">
-                                        <img src={meter3} alt="Image" />
-                                        <h5>Time Management</h5>
-                                    </div>
-                                    <div className="item">
-                                        <img src={meter1} alt="Image" />
-                                        <h5>Critical Thinking</h5>
-                                    </div>
-                                    <div className="item">
-                                        <img src={meter3} alt="Image" />
-                                        <h5>Team Work</h5>
-                                    </div>
+                                    <CircularProgress targetValue={95} label="Effective-Communication" />
+                                    <CircularProgress targetValue={80} label="Leadership" />
+                                    <CircularProgress targetValue={90} label="Time-Management" />
+                                    <CircularProgress targetValue={85} label="Critical-Thinking" />
+                                    <CircularProgress targetValue={90} label="Team-Work" />
                                 </Carousel>
                             </section>
                         </div>
