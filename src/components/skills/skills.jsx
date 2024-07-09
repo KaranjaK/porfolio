@@ -1,11 +1,7 @@
 import CircularProgress from './progress';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from "../resources/meter1.svg"
-import meter2 from "../resources/meter2.svg"
-import meter3 from "../resources/meter3.svg"
-import colorSharp from "../resources/color-sharp.png"
 import { Container } from 'react-bootstrap';
 import WOW from 'wowjs'
 import 'animate.css/animate.css'
@@ -37,7 +33,7 @@ const Skills = () => {
 
 
     return (
-        <Container className="skill" id="skills">
+        <Container fluid className="skill" id="skills">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -73,7 +69,6 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
         </Container>
     )
 }

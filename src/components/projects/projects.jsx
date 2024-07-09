@@ -35,13 +35,6 @@ const Projects = () => {
             projectUrl: "https://accordion-select.netlify.app/",
         },
         {
-            title: "CropScan",
-            pro_stack: "Django-Python",
-            description: "Full Stack application that scans crops in the farm, queries an API(Plantrix API) and sends a text message to the farmer based on findings in relation to crop diseases, pests and nutrients needed",
-            imgUrl: cropscan,
-            projectUrl: "https://cropscan.co.ke/",
-        },
-        {
             title: "KaranjaKelvin",
             pro_stack: "React",
             description: "This is a link of this portfolio project",
